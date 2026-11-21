@@ -3,7 +3,7 @@
 
 def normalize(label):
     """Return the label lower-cased with outer whitespace dropped."""
-    return label.strip().lower()
+    return label.lower()
 
 
 def is_valid(label):
