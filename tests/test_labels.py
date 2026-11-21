@@ -14,6 +14,10 @@ class LabelsTest(unittest.TestCase):
         self.assertTrue(is_valid("a" * 20))
         self.assertFalse(is_valid("a" * 21))
 
+    def test_the_limit_can_be_set(self):
+        self.assertTrue(is_valid("abcde", max_length=5))
+        self.assertFalse(is_valid("abcdef", max_length=5))
+
 
 if __name__ == "__main__":
     unittest.main()
